@@ -32,7 +32,7 @@ export default Ember.Component.extend({
         options[optionName] = this.get(optionName);
         return options;
       }, {});
-
+    options.svgPath = "/assets/ui/icons.svg";
     this.$().attr("placeholder", this.get("placeholder"));
     this.$().trumbowyg(options);
     this.$().trumbowyg('html', this.get('html'));
