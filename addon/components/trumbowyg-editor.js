@@ -18,6 +18,8 @@ export default Ember.Component.extend({
     'removeformatPasted',
     'autogrow'
   ],
+  
+  oldOptions: {},
 
   _updateDisabled(){
     if (typeof this.get("disabled") === "boolean") {
